@@ -1,0 +1,69 @@
+
+*{
+  background-color: #ece1bf;
+}
+
+
+a{
+  text-decoration-line: none;
+  background-color: inherit;
+  color: inherit;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  margin: -20%;
+
+}
+table{
+  border-collapse: collapse;
+  font-size: 50px;
+  text-align: center
+
+}
+td{
+  padding: 6px;
+}
+
+
+.Elemento{
+    border: 1px solid black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Elemento:hover{
+  background-color: #031FA2;
+  color: #FFFFFF;
+}
+
+.NoMetal{
+  background-color: #DDABFF;
+}
+
+.GasNoble{
+  background-color: #00CCFF;
+}
+
+.Alcalino{
+  background-color: #F7CAAC;
+}
+
+.alcalinoterreo, .Metalp{
+  background-color: #FFE599;
+}
+
+.Metaloides{
+  background-color: #68FB61;
+}
+
+.Halogenos{
+  background-color: #FF66FF;  
+}
+
+.MetalesTrans{
+  background-color: #FFFF00;  
+}
+
+.LaAc{
+  background-color: #E2EFD9;
+}
