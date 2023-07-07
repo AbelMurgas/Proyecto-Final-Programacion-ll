@@ -1,0 +1,93 @@
+
+/*Formato general*/
+body{
+    background: linear-gradient(to bottom, #ece1bf, #d6ff20, #03b3a4);
+    margin: 30px;
+}
+
+/*titulo general.titulo{
+    font-size: 70px;
+    margin-top: 40px;
+    width: 1400px;
+    height: 300px;
+    background-color: #320d88;
+    color:antiquewhite;
+    border-radius: 20px;
+    padding: 40px;
+
+}*/
+
+.titulo {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    margin: 0;
+    height: auto;
+    background-color: #320d88;
+    color: antiquewhite;
+    border-radius: 20px;
+    padding: 40px;
+    font-size: 70px;
+  }
+  
+
+/*formulario general*/
+
+.formulario{
+    margin-top: 100px;
+    margin-left: 50px;
+    text-decoration: wavy;
+    text-align: left;
+    line-height: 2.5;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 400px;
+    height: 500px;
+    background-color: #2c0781;
+    border-radius: 20px;
+    padding: 40px;
+    color:rgb(3, 126, 85);
+    margin-bottom: 200px;
+}
+
+input[type="radio"] {
+    padding-left: 60px;
+  }
+
+label[for="cedula"] {
+    margin-bottom: 20px;
+  }
+  
+  label[for="nombre"] {
+    margin-bottom: 20px;
+  }
+  
+
+/*formato del boton enviar*/
+
+.boton-enviar {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+.boton-enviar:hover {
+    background-color: #d32f2f;
+  }
+  
+
+
+footer {
+    
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1d4bca;
+    height: 200px;
+    
+}
