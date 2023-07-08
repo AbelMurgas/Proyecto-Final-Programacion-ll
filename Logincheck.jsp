@@ -3,7 +3,8 @@
  <%@ page import="java.sql.*" %>
  <%
  // Obtener los datos enviados desde el formulario
- String user = request.getParameter("username");
+ String nombre = request.getParameter("FirstName");
+ String apellido = request.getParameter("LastName");
  String password = request.getParameter("password");
 
  // Database connection details
@@ -14,14 +15,21 @@
  Connection con = DriverManager.getConnection(url, username, passwordDB);
  
  
- PreparedStatement consultaP = con.prepareStatement("SELECT * FROM userregistry WHERE FirstName=? AND Password=?");
- consultaP.setString(1, user);
- consultaP.setString(2, password);
+ PreparedStatement consultaP = con.prepareStatement("SELECT * FROM userregistry WHERE FirstName=? AND LastName=? AND Password=?");
+ consultaP.setString(1, nombre);
+ consultaP.setString(2, apellido);
+ consultaP.setString(3, password);
 
  ResultSet result = consultaP.executeQuery();
  if (result.next()) {
+	 //para almacenar la session
+	 String userID = result.getString("UserID");
+	 HttpSession sessions = request.getSession();
+	 sessions.setAttribute("userID", userID);
+	 
+	 
      out.print("inicio Correcto");
-     response.sendRedirect("Home.html");
+     response.sendRedirect("Home.jsp");
  } else {
 
  %>
