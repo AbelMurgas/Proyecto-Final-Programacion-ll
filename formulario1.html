@@ -10,7 +10,7 @@
     <div class="titulo">
         <h3>Registro para el curso de Ciencias Naturales</h3>
     </div>
-
+<!-- formulario para que el usuario se introduzca en un curso, contiene tipos text basicos y una pregunta de botones -->
     <div class="formulario">
         <form action="processCourseForm.jsp" method="POST">
             <h3>Llene el formulario para registrarse al curso</h3>
@@ -25,6 +25,7 @@
             <input type="text" id="cedula" name="cedula" pattern="\d+-\d+-\d+" required title="El formato de la cédula debe ser: XXX-XXX-XXX, donde X representa un número.">
             <br />
 
+            <!--valor escondido para que cuando se sube a la base de datos, se pueda distinguir el curso inscrito*/-->
             <input type="hidden" id="courseID" name="courseID" value="001">
 
             <label>Fecha de inicio del curso:</label>
