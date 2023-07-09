@@ -1,3 +1,5 @@
+CREATE DATABASE solociencia;
+
 CREATE TABLE User (
     UserID INT AUTO_INCREMENT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -22,8 +24,6 @@ CREATE TABLE course_registry (
     FOREIGN KEY (UserID) REFERENCES User(UserID),
     FOREIGN KEY (CourseID) REFERENCES Course_Type(CourseID)
 );
-
-
 
 INSERT INTO Course_Type (CourseID, CourseName) VALUES
     ('001', 'Ciencias Naturales'),
