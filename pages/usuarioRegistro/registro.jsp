@@ -33,7 +33,7 @@
   }
 
   // Redirigir a home.html
-  response.sendRedirect("../index.html");
+  response.sendRedirect("../login/login.jsp"");
 %>
 
 <!DOCTYPE html>

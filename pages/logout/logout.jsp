@@ -9,5 +9,5 @@
     }
 
     // Redirigir al usuario a la p�gina de inicio
-    response.sendRedirect("../index.html");
+    response.sendRedirect("../login/login.jsp");
 %>
