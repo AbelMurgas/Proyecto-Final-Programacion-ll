@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html lang="es"> 
 <%
     // Obtener los datos enviados desde el formulario
     String nombre = request.getParameter("FirstName");
@@ -31,11 +33,9 @@
             sessions.setAttribute("userID", userID);
 
             out.print("inicio Correcto");
-            response.sendRedirect("Home.jsp");
+            response.sendRedirect("Home.html");
         } else {
             %>
-            <!DOCTYPE html>
-            <html lang="en">
             <head>
                 <meta charset="ISO-8859-1">
                 <title>INICIO ERROR</title>
@@ -46,13 +46,12 @@
                 <p><a href="registrousuario.html">¿No tienes una cuenta? Regístrate aquí</a></p>
             </body>
             </html>
-            <%
-        }
-    } else if (requestMethod.equalsIgnoreCase("GET")) {
-        <!DOCTYPE html>
-        <html lang="en">
-        <!--Pagina de inicio donde el Usuario ingresa con su cuenta si ya existe, y puede ir a crearla-->>
+            
+         <% } 
+    }else if (requestMethod.equalsIgnoreCase("GET")) {
+    %>
 
+        <!--Pagina de inicio donde el Usuario ingresa con su cuenta si ya existe, y puede ir a crearla-->
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,7 +62,7 @@
             <div class="container">
                 <h1>Bienvenido a solociencia.com</h1>
                 <p>Por favor introduce tus credenciales</p>
-                <form action="Logincheck.jsp" method="post">
+                <form action="login.jsp" method="post">
                     <label for="FirstName">Nombre:</label>
                     <input type="text" id="FirstName" name="FirstName" required><br>
                 
@@ -80,5 +79,7 @@
             </div>
         </body>
         </html>
+        
+    <%
     }
-%>
+    %>
