@@ -1,9 +1,11 @@
+/*FORMATO CSS PARA LA PAGINA CON LA TABLA PERIODICA
 
+*/
 *{
   margin: 0;
   padding: 0;
 }
-
+/*general*/
 html, body{
   height: 100%;
   width: 100%;
@@ -12,11 +14,13 @@ html, body{
   align-items: center;
   background-color: #3993DD;
 }
-
+/*locacion y posicion de la tabla*/
 main { 
   display: flex;
   flex-direction: column;
 }
+
+/*formato para los botones de la tabla periodica*/
 a{
   text-decoration-line: none;
   background-color: inherit;
@@ -28,6 +32,10 @@ a{
   margin: -20%;
 
 }
+
+
+
+/*formato, de la tabla*/
 table{
   border-collapse: collapse;
   font-size: 30px;
@@ -37,7 +45,7 @@ td{
   padding: 6px;
 }
 
-
+/*formato, la tabla periodica esta diferenciada por diferentes grupos en los que se encuentran varios elementos, cada grupo mayor tiene un color diferente para representarlos*/
 .Elemento{
     border: 1px solid black;
     transition: background-color 0.3s, color 0.3s;
