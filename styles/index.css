@@ -1,0 +1,89 @@
+* {
+  /* Se resetea los estilos por defecto*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* se guarda el font-family para todo */
+}
+
+html,
+body {
+  height: 100%; /* se usa la pagina completa */
+}
+
+body {
+  background-color: #3993DD;
+}
+
+/* se quita la decoracion producida por los link */
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* --- Navbar styles --- */
+nav {
+  padding: 10px;
+  display: flex;
+  background-color: #6A3E37;
+}
+
+main {
+  color: #6A3E37;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  color: rgb(43, 169, 223);
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 60px;
+}
+
+.logo-image img {
+  width: 100%;
+}
+
+.navbar-links {
+  list-style-type: none;
+}
+
+.navbar-links li a {
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(43, 169, 223);
+  border-radius: 20px;
+}
+
+.navbar-links li a:hover {
+  background-color: #E0ACD5;
+  color: #6A3E37
+}
+
+.company-name {
+  color: rgb(43, 169, 223);
+}
+
+.card { 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight:bold;
+}

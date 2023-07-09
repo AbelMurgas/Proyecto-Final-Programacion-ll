@@ -1,0 +1,70 @@
+/* Este documento es para clases de utilidades */
+
+/* se import el font montserrat para utilizarlo en los titulos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.title{
+  text-align: center;
+  font-size: 50px;
+} 
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center-js{
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center {
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gap-2 {
+  gap: 20px;
+}
+
+.bg-blueDark {
+  background-color: #052041;
+}
+
+.bg-blue {
+  background-color: #1273EB;
+}
+
+.border-b {
+  border-bottom: #1273EB solid 2px;
+}
+
+.color-blue{
+  color:#1273EB ;
+}
+
+.mb-5 {
+  margin-bottom: 50px;
+}
+
+.mb-2{
+  margin-bottom: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.referencia-noticiero{
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+}

@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+  <head>
+    <title>Noticias Deportivas</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+  />
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/utils.css" />
+  <link rel="icon" type="image/x-icon" href="../assets/logo.ico" />
+  <body>
     <header>
-        <a href="index.html">Home</a><br>
-        <a href="./coursesForms/formulario_ciencia_naturales.html">Registrarse en el Curso de Ciencias Naturales</a><br>
-        <a href="./coursesForms/formulario_quimica_biologia.html">Registrarse en el Curso de Qu�mica y Biolog�a </a><br>
-        <a href="./coursesForms/formulario_programacion.html">Registrarse en el Curso de programaci�n</a><br>
-        <a href="./referencia/tablaPeriodica.html">Referencias</a><br>
+      <nav class="flex flex-center-js  mb-5">
+        <div>
+          <a class="logo" href="./index.html">
+            <div class="logo-image">
+              <img src="../images/logo.png" alt="" />
+            </div>
+            <p class="company-name">Solociencia.com</p>
+          </a>
+        </div>
+        <ul class="flex gap-2 navbar-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="./formularioCursos/formulario_ciencia_naturales.html">Registrarse en el Curso de Ciencias Naturales</a></li>
+          <li><a href="./formularioCursos/formulario_quimica_biologia.html">Registrarse en el Curso de Quimica y Biologia </a></li>
+          <li><a href="./formularioCursos/formulario_programacion.html">Registrarse en el Curso de programacion</a></li>
+          <li><a href="./referencia/tablaPeriodica.html">Referencias</a></li>
+        </ul>
+      </nav>
     </header>
-    <section>
+
+    <main>
+      <section class="titulo mb-5">
+        <h1 class="title">Avances cientificos</h1>
+      </section>
+      <section class="flex flex-center">
+        <div class="card">
+          <h2 class="card-title">Metastasis del Cancer</h2>
+          <iframe
+            width="auto"
+            height="auto"
+            src="https://www.youtube.com/embed/lCAvOctB1Hw"
+            class="mb-2"
+          >
+          </iframe>
+          <p>PARA CONOCER MÁS SOBRE ESTE TEMA, <a href="https://www.youtube.com/watch?v=lCAvOctB1Hw" target="_blank"><u>HAGA CLICK AQUÍ</u></a></p>
+        </div>
         
-    </section>
-    <footer>
-        <a href="logout.jsp">Logout</a>
-    </footer>
-    
-    
-    
-</body>
+        <div class="card">
+          <h2 class="card-title">Covid 19 vacunas</h2>
+          <iframe
+            width="auto"
+            height="auto"
+            src="https://www.youtube.com/embed/CugCjcafAgU"
+            class="mb-2"
+          >
+          </iframe>
+          <p>PARA CONOCER MÁS SOBRE ESTE TEMA, <a href="https://www.youtube.com/watch?v=CugCjcafAgU" target="_blank"><u>HAGA CLICK AQUÍ</u></a></p>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Farmaco contra VIH</h2>
+          <iframe
+            width="auto"
+            height="auto"
+            src="https://www.youtube.com/embed/tfIPV-WPcww"
+            class="mb-2"
+          >
+          </iframe>
+          <p>PARA CONOCER MÁS SOBRE ESTE TEMA, <a href="https://www.youtube.com/watch?v=tfIPV-WPcww" target="_blank"><u>HAGA CLICK AQUÍ</u></a></p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
