@@ -1,10 +1,15 @@
+
+
+/*ESTE ES EL FORMATO PARA LA PAGINA DE INICIO*/
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: #F4EBE8;
 }
-
+/*general*/
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -14,6 +19,7 @@ body {
   background-color: #3993DD;
 }
 
+/*rectangulo de la pagina de inicio */
 .container {
   max-width: 400px;
   padding: 20px;
@@ -21,27 +27,30 @@ body {
   border-radius: 4px;
   background-color: #6A3E37;
 }
-
+/*titulo*/
 h1 {
   text-align: center;
   margin-bottom: 10px;
 }
+
+/*el paragrafito de abajo del titulo*/
 
 p {
   text-align: center;
   margin-bottom: 20px;
 }
 
+/*formato de como se esta organizada el formulario de INICIO/REGISTRO*/
 form {
   display: flex;
   flex-direction: column;
 }
-
+/*pregunta*/
 label {
   margin-bottom: 5px;
   font-weight: bold;
 }
-
+/*cajas de respuesta*/
 input[type="text"],
 input[type="password"] {
   padding: 10px;
@@ -50,6 +59,8 @@ input[type="password"] {
   border-radius: 4px;
 }
 
+
+/*boton de envio*/
 input[type="submit"] {
   background-color: #6A3E37;
   color: #E0ACD5;
@@ -65,6 +76,8 @@ input[type="submit"]:hover {
   color: #6A3E37;
 }
 
+
+/*formato para el hipervinculo que te manda al otro formulario dependiendo de si tengas cuenta o no*/
 a {
   text-align: center;
   display: block;
