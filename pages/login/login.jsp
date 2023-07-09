@@ -33,7 +33,7 @@
             sessions.setAttribute("userID", userID);
 
             out.print("inicio Correcto");
-            response.sendRedirect("Home.html");
+            response.sendRedirect("../index.html");
         } else {
             %>
             <head>
