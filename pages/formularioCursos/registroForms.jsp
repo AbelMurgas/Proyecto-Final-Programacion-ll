@@ -26,7 +26,7 @@
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection con = DriverManager.getConnection(url, username, passwordDB);
-                PreparedStatement stmt = con.prepareStatement("INSERT INTO courseregistry (UserID, CourseID, CourseDate, DisplayName, Cedula) VALUES (?, ?, ?, ?, ?)");
+                PreparedStatement stmt = con.prepareStatement("INSERT INTO course_registry (UserID, CourseID, CourseDate, DisplayName, Cedula) VALUES (?, ?, ?, ?, ?)");
                 stmt.setString(1, userID);
                 stmt.setString(2, courseID);
                 stmt.setString(3, fecha);
@@ -42,24 +42,10 @@
             }
 
             // Redirect to Home.jsp
-            response.sendRedirect("Home.jsp");
-        } else if (requestMethod.equalsIgnoreCase("GET")) {
-            // Handle the GET request here
-            String courseType = request.getParameter("courseType");
-            if (courseType != null) {
-                if (courseType.equalsIgnoreCase("cienciasnaturales")) {
-                  out.println("CN");
-                } else if (courseType.equalsIgnoreCase("quimicaybiologia")) {
-                  out.println("QB");
-                } else if (courseType.equalsIgnoreCase("programacion")) {
-                  out.println("P");
-                } else {
-                  out.println("Registro exitoso.");
-                }
-            }
-        }
+            response.sendRedirect("../index.html");
+        } 
     } else {
-        // User is not logged in, redirect to Inicio.html
-        response.sendRedirect("Inicio.html");
+        // User is not logged in, redirect to login
+        response.sendRedirect("../login/login.jsp");
     }
 %>

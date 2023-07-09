@@ -19,7 +19,7 @@
     String requestMethod = request.getMethod();
 
     if (requestMethod.equalsIgnoreCase("POST")) {
-        PreparedStatement consultaP = con.prepareStatement("SELECT * FROM userregistry WHERE FirstName=? AND LastName=? AND Password=?");
+        PreparedStatement consultaP = con.prepareStatement("SELECT * FROM user WHERE FirstName=? AND LastName=? AND Password=?");
         consultaP.setString(1, nombre);
         consultaP.setString(2, apellido);
         consultaP.setString(3, password);
@@ -41,9 +41,11 @@
                 <title>INICIO ERROR</title>
             </head>
             <body>
-                <h1>Error de inicio de sesión</h1>
-                <p>Las credenciales proporcionadas son incorrectas. Por favor, inténtalo nuevamente.</p>
-                <p><a href="registrousuario.html">¿No tienes una cuenta? Regístrate aquí</a></p>
+                <section>
+                    <h1>Error de inicio de sesión</h1>
+                    <p>Las credenciales proporcionadas son incorrectas. Por favor, inténtalo nuevamente.</p>
+                    <p><a href="../usuarioRegistro/registro.html">¿No tienes una cuenta? Regístrate aquí</a></p>
+                </section>
             </body>
             </html>
             
@@ -56,13 +58,13 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>INICIO</title>
-            <link rel="stylesheet" href="../styles/inicio.css" />
+            <link rel="stylesheet" href="../../styles/auth.css" />
         </head>
         <body>
-            <div class="container">
+            <section class="container">
                 <h1>Bienvenido a solociencia.com</h1>
                 <p>Por favor introduce tus credenciales</p>
-                <form action="login.jsp" method="post">
+                <form action="./login.jsp" method="post">
                     <label for="FirstName">Nombre:</label>
                     <input type="text" id="FirstName" name="FirstName" required><br>
                 
@@ -75,8 +77,8 @@
                     <input type="submit" value="Iniciar sesión">
                 </form>
 
-                <p><a href="registrousuario.html">¿No tienes una cuenta? Regístrate aquí</a></p>
-            </div>
+                <p class="link">¿No tienes una cuenta? <a href="../usuarioRegistro/registro.html">Regístrate aquí</a></p>
+            </section>
         </body>
         </html>
         

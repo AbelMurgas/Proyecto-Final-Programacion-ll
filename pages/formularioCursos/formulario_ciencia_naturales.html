@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/formulario_cursos.css" />
+    <title>Ciencias Naturales</title>
+  </head>
+  <body>
+    <header class="titulo">
+      <h3>Registro para el curso de Ciencias Naturales</h3>
+    </header>
+    <!-- formulario para que el usuario se introduzca en un curso, contiene tipos text basicos y una pregunta de botones -->
+    <section class="formulario">
+      <form action="./registroForms.jsp" method="POST">
+        <h3>Llene el formulario para registrarse al curso</h3>
+
+        <label for="nombre">Nombre del participante:</label>
+        <br />
+        <input type="text" id="nombre" name="nombre" required />
+        <br />
+
+        <label for="cedula">Cédula:</label>
+        <br />
+        <input
+          type="text"
+          id="cedula"
+          name="cedula"
+          pattern="\d+-\d+-\d+"
+          required
+          title="El formato de la cédula debe ser: XXX-XXX-XXX, donde X representa un número."
+        />
+        <br />
+
+        <!--valor escondido para que cuando se sube a la base de datos, se pueda distinguir el curso inscrito*/-->
+        <input type="hidden" id="courseID" name="courseID" value="001" />
+
+        <label>Fecha de inicio del curso:</label>
+        <br />
+        <div class="curso-fecha">
+          <input
+            type="radio"
+            id="fecha1"
+            name="fecha"
+            value="20 de julio"
+            required
+          />
+          <label for="fecha1">20 de julio</label>
+        </div>
+
+        <br />
+
+        <div class="curso-fecha">
+          <input
+            type="radio"
+            id="fecha2"
+            name="fecha"
+            value="24 de octubre"
+            required
+          />
+          <label for="fecha2">24 de octubre</label>
+        </div>
+
+        <br />
+
+        <div class="curso-fecha">
+          <input
+            type="radio"
+            id="fecha3"
+            name="fecha"
+            value="14 de noviembre"
+            required
+          />
+          <label for="fecha3">14 de noviembre</label>
+        </div>
+
+        <br />
+        <br />
+
+        <button type="submit" class="boton-enviar">Enviar</button>
+      </form>
+    </section>
+
+    <footer id="footer"></footer>
+  </body>
+</html>

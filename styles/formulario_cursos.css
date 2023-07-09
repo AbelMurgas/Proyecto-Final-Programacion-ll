@@ -28,8 +28,10 @@ body {
   max-width: 500px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid #6A3E37;
   background-color: #6A3E37;
+  border-radius: 10px;
+  box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -49,23 +51,40 @@ input[type="text"] {
 /*botones*/
 input[type="radio"] {
   margin-right: 5px;
+  accent-color: #E0ACD5 
+}
+
+.curso-fecha input[type="radio"], .curso-fecha label{
+  display: inline;
+}
+
+input, select, textarea{
+  color:#6A3E37;
+}
+
+input[type="text"]:focus{
+  outline: none !important;
+  border:1px solid  #6A3E37;
+  box-shadow: 0 0 10px #E0ACD5;
 }
 
 
 /*diesño del boton enviar*/
 .boton-enviar {
-  background-color: #E0ACD5;
-  color: #fff;
+  background-color: #6A3E37;
+  color: #E0ACD5;
+  border: 1px solid #E0ACD5;
   padding: 10px 20px;
-  border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 
 /*diseño cuando se le pone el mouse encima*/
 .boton-enviar:hover {
-  background-color: #6A3E37;
+  background-color: #E0ACD5;
+  color: #6A3E37;
 }
 
 /* Responsive Design */

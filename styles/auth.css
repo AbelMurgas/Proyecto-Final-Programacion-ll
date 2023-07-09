@@ -1,6 +1,15 @@
 
 
 /*ESTE ES EL FORMATO PARA LA PAGINA DE INICIO*/
+input, select, textarea{
+  color:#6A3E37;
+}
+
+input:focus{
+  outline: none !important;
+  border:1px solid  #6A3E37;
+  box-shadow: 0 0 10px #E0ACD5;
+}
 
 
 * {
@@ -21,10 +30,10 @@ body {
 
 /*rectangulo de la pagina de inicio */
 .container {
-  max-width: 400px;
+  max-width: 500px;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   background-color: #6A3E37;
 }
 /*titulo*/
@@ -59,7 +68,6 @@ input[type="password"] {
   border-radius: 4px;
 }
 
-
 /*boton de envio*/
 input[type="submit"] {
   background-color: #6A3E37;
@@ -88,6 +96,14 @@ a {
 
 a:hover {
   color: #E0ACD5;
+}
+
+.link{
+  margin-top: 15px;
+}
+
+.link a{
+  display: inline;
 }
 
 /* Responsive Design */

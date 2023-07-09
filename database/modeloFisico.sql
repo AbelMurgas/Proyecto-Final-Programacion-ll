@@ -14,13 +14,13 @@ CREATE TABLE User (
 );
 
 -- Create the CoursesType table
-CREATE TABLE Courses_Type (
+CREATE TABLE Course_Type (
     CourseID INT PRIMARY KEY,
     CourseName VARCHAR(100)
 );
 
 -- Create the Course table
-CREATE TABLE Courses (
+CREATE TABLE course_registry (
     UserID INT,
     CourseID INT,
     CourseDate VARCHAR(100),

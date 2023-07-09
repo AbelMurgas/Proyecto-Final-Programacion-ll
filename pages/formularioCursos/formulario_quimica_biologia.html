@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <!--Documento funcionalmente igual a formulario1 con la diferencia de que el valor escondido es diferente*/-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/formulario.css" />
-    <title>Ciencias Naturales</title>
+    <link rel="stylesheet" href="../../styles/formulario_cursos.css" />
+    <title>Quimica y Biologia</title>
 </head>
 <body>
-    <div class="titulo">
-        <h1>Registro para el curso de Ciencias Naturales</h1>
-    </div>
+    <header class="titulo">
+        <h1>Registro para el curso de Quimica y Biologia</h1>
+    </header>
 
-    <div class="formulario">
-        <form action="processCourseForm.jsp" method="POST">
+    <section class="formulario">
+        <form action="./registroForms.jsp" method="POST">
             <h3>Llene el formulario para registrarse al curso</h3>
 
             <label for="nombre">Nombre del participante:</label>
@@ -26,7 +26,7 @@
             <input type="text" id="cedula" name="cedula" pattern="\d+-\d+-\d+" required title="El formato de la cédula debe ser: XXX-XXX-XXX, donde X representa un número.">
             <br />
 
-            <input type="hidden" id="courseID" name="courseID" value="001">
+            <input type="hidden" id="courseID" name="courseID" value="002">
 
             <label>Fecha de inicio del curso:</label>
             <br />
@@ -45,7 +45,7 @@
 
             <button type="submit" class="boton-enviar">Enviar</button>
         </form>
-    </div>
+    </section>
 
     <footer id="footer">
     

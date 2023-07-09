@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INICIO</title>
-    <link rel="stylesheet" href="styles/inicio.css" />
+    <link rel="stylesheet" href="../../styles/auth.css" />
 </head>
 <body>
     <div class="container">
         <h1>Bienvenido a solociencia.com</h1>
         <p>Llene el siguiente formulario para crear una cuenta</p>
-        <form action="processForm.jsp" method="POST">
+        <form action="./registro.jsp" method="POST">
             <label for="nombre">Nombre del participante:</label>
             <input type="text" id="nombre" name="nombre" required>
       
@@ -24,9 +24,9 @@
             <input type="password" id="password" name="password" required>
       
             <input type="submit" value="Registrarse">
-          </form>
+        </form>
 
-        <p><a href="registrousuario.html">¿Ya tienes cuenta con nosotros? Ingresa aquí</a></p>
+        <p class="link">¿Ya tienes cuenta con nosotros? <a href="../login/login.jsp">Ingresa aquí</a></p>
     </div>
 </body>
 </html>
